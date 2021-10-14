@@ -8,8 +8,11 @@ Class {
 BaselineOfPlantUmlMicrodownExtension >> baseline: spec [
 
 	<baseline>
-	spec for: #common do: [ 
-		spec
-			package: #'PlantUml-MicrodownExtension'
-				with: [ spec repository: 'github://kasperosterbye/PlantUMLBridge' ]]
+
+    spec for: #common do: [
+        spec 
+            baseline: 'PlantUML Bridge'
+            with: [ 
+                spec repository: 'github://kasperosterbye/PlantUMLBridge' ].
+        spec package: 'PlantUml-MicrodownExtension' ].   
 ]

@@ -11,5 +11,5 @@ BaselineOfPlantUmlMicrodownExtension >> baseline: spec [
 	spec for: #common do: [ 
 		spec
 			package: #'PlantUml-MicrodownExtension'
-				with: [ spec repository: 'github://kasperosterbye/PlantUMLBridge' ]]
+				with: [ spec repository: 'github://kasperosterbye/PlantUMLBridge/repository' ]]
 ]

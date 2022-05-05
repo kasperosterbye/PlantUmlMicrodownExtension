@@ -16,3 +16,11 @@ stop
 @enduml
 &
 ```
+
+## Install
+```
+Metacello new
+    baseline: 'PlantUmlMicrodownExtension';
+    repository: 'github://kasperosterbye/PlantUmlMicrodownExtension';
+    load
+```

@@ -4,7 +4,7 @@ Text creation takes place in `MicRichTextComposer>>#visitPlantUML:`
 
 I use the extension of the MicMathBlock and can be written as:
 ```text
-&plantuml
+$$plantuml
 @startuml
 title Thursday night
 start
@@ -12,10 +12,10 @@ start
 :Drink Homebrew;
 stop
 @enduml
-&
+$$
 ```
 
-&plantuml
+$$plantuml
 @startuml
 title Thursday night
 start
@@ -23,7 +23,7 @@ start
 :Drink Homebrew;
 stop
 @enduml
-&
+$$
 
 "
 Class {

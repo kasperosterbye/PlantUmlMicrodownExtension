@@ -9,7 +9,7 @@ PlantUMLMicrodownExtensionTest >> testPlantUMLRichTextVisit [
 	| src richText |
 	MicRichTextComposer initialize.
 	src := '
-&plantuml
+$$plantuml
 @startuml
 title Thursday night
 start
@@ -17,7 +17,7 @@ start
 :Drink Homebrew;
 stop
 @enduml
-&'.
+$$'.
 	richText := Microdown asRichText: src.
 	self assert: richText asString trim size equals: 1.
 	self assert: (richText asMorph ) height > 100
@@ -29,7 +29,7 @@ PlantUMLMicrodownExtensionTest >> testUmlLanguageExtensionIsInstantiated [
 	| src doc |
 	MicRichTextComposer initialize.
 	src := '
-&plantuml
+$$plantuml
 @startuml
 title Thursday night
 start
@@ -37,7 +37,7 @@ start
 :Drink Homebrew;
 stop
 @enduml
-&'.
+$$'.
 	doc := Microdown parse: src.
 	self assert: doc children size equals: 1.
 	self assert: doc children first class equals: PlantUMLExtensionBlock
